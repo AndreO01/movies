@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		tools:context=".ui.splash.SplashActivity">
+	<data>
+		<import type="android.view.View"/>
+		<variable name="viewModel" type="com.teste.movies.ui.splash.SplashViewModel"/>
+	</data>
+	
+	<android.support.v7.widget.LinearLayoutCompat
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:background="@color/colorBlack"
+			android:gravity="center_horizontal">
+		
+		<android.support.v7.widget.LinearLayoutCompat
+				android:layout_weight="1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center">
+			
+			<ImageView
+					android:layout_width="300dp"
+					android:layout_height="wrap_content"
+					android:src="@drawable/movies_logo"/>
+		
+		</android.support.v7.widget.LinearLayoutCompat>
+		
+		<android.support.v7.widget.AppCompatTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorWhite"
+				android:text="Teste Jornal O POVO - 2018"
+		android:layout_margin="@dimen/nav_header_vertical_spacing"/>
+	
+	</android.support.v7.widget.LinearLayoutCompat>
+
+</layout>
